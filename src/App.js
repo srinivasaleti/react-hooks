@@ -1,3 +1,4 @@
+import { Greeting } from "./Greeting";
 import {Welcome} from "./Welcome";
 
 //Import 
@@ -6,6 +7,7 @@ function App() {
     <div className="App">
       Hi
       <Welcome />
+      <Greeting name={"sai"} />
     </div>
   );
 }
