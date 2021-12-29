@@ -1,3 +1,4 @@
+import { Counter } from "./Counter";
 import { Greeting } from "./Greeting";
 import {Welcome} from "./Welcome";
 
@@ -8,6 +9,7 @@ function App() {
       Hi
       <Welcome />
       <Greeting name={"sai"} />
+      <Counter />
     </div>
   );
 }
