@@ -1,5 +1,6 @@
 import { Counter } from "./Counter";
 import { Greeting } from "./Greeting";
+import { PrincipleIntrestCalculator } from "./PrincipleIntrestCalculator";
 import {Welcome} from "./Welcome";
 
 //Import 
@@ -7,9 +8,10 @@ function App() {
   return (
     <div className="App">
       Hi
-      <Welcome />
+      {/* <Welcome />
       <Greeting name={"sai"} />
-      <Counter />
+      <Counter /> */}
+      <PrincipleIntrestCalculator />
     </div>
   );
 }
