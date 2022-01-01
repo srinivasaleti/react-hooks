@@ -9,9 +9,9 @@ function App() {
     <div className="App">
       Hi
       {/* <Welcome />
-      <Greeting name={"sai"} />
-      <Counter /> */}
-      <PrincipleIntrestCalculator />
+      <Greeting name={"sai"} /> */}
+      <Counter />
+      {/* <PrincipleIntrestCalculator /> */}
     </div>
   );
 }
