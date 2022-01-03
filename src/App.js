@@ -1,6 +1,7 @@
 import { Counter } from "./Counter";
 import { Greeting } from "./Greeting";
 import { PrincipleIntrestCalculator } from "./PrincipleIntrestCalculator";
+import { UseEffectCleanupDemo } from "./UseEffectCleanupDemo";
 import {Welcome} from "./Welcome";
 
 //Import 
@@ -10,7 +11,8 @@ function App() {
       Hi
       {/* <Welcome />
       <Greeting name={"sai"} /> */}
-      <Counter />
+      {/* <Counter /> */}
+      <UseEffectCleanupDemo />
       {/* <PrincipleIntrestCalculator /> */}
     </div>
   );
