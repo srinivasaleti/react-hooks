@@ -54,3 +54,15 @@ dependencies argument of `useEffect(callback, dependencies)` lets you control wh
     ```
 
 useEffect = `componentDidMount + componentDidUpdate + componentWillUnmount`.
+
+* You can maintain more than one `useEffect` in a single component.
+  
+# useEffect cleanup
+* If we return a function within the method, this function will execute when the component gets unmounted.
+
+        useEffect(function() {
+            ...effect
+            return() => {
+                ...cleanup code
+            }
+        })

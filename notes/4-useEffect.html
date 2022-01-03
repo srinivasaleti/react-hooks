@@ -98,6 +98,21 @@
 </li>
 </ul>
 <p>useEffect = <code>componentDidMount + componentDidUpdate + componentWillUnmount</code>.</p>
+<ul>
+<li>You can maintain more than one <code>useEffect</code> in a single component.</li>
+</ul>
+<h1 id="useeffect-cleanup">useEffect cleanup</h1>
+<ul>
+<li>
+<p>If we return a function within the method, this function will execute when the component gets unmounted.</p>
+<pre><code>  useEffect(function() {
+      ...effect
+      return() =&gt; {
+          ...cleanup code
+      }
+  })</code></pre>
+</li>
+</ul>
 
     </body>
     </html>

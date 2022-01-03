@@ -11,9 +11,13 @@ export function Counter() {
         setY(y + 1);
     }
 
-    useEffect(function(){
+    useEffect(function () {
         document.title = "You Clicked " + y + " times";
     }, [y]);
+
+    useEffect(function () {
+        document.title = "You Clicked " + x + " times";
+    }, [x]);
 
     return <div>
         <h1>X: Count : {x}</h1>
