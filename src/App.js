@@ -1,4 +1,5 @@
 import { Counter } from "./Counter";
+import { Todos } from "./Todos";
 import { Greeting } from "./Greeting";
 import { PrincipleIntrestCalculator } from "./PrincipleIntrestCalculator";
 import { UseEffectCleanupDemo } from "./UseEffectCleanupDemo";
@@ -13,8 +14,10 @@ function App() {
       <Greeting name={"sai"} /> */}
       {/* <Counter /> */}
       {/* <UseEffectCleanupDemo /> */}
-      <UserDashboard />
+      {/* <UserDashboard /> */}
       {/* <PrincipleIntrestCalculator /> */}
+      <Todos /> 
+      {/* <ToggleWorld /> */}
     </div>
   );
 }
