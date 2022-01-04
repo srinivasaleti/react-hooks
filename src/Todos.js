@@ -1,13 +1,7 @@
 import { useState, useEffect } from "react";
 
 export function Todos() {
-    const [data, setData] = useState(null);
-
-    useEffect(() => {
-        fetch("https://jsonplaceholder.typicode.com/todos")
-            .then((res) => res.json())
-            .then((data) => setData(data));
-    }, []);
+    const data = useFetch("https://jsonplaceholder.typicode.com/todos");
 
     return <div>
         {
@@ -17,4 +11,17 @@ export function Todos() {
             })
         }
     </div>;
+}
+
+// "https://jsonplaceholder.typicode.com/todos"
+function useFetch(url) {
+    const [data, setData] = useState(null);
+
+    useEffect(() => {
+        fetch(url)
+            .then((res) => res.json())
+            .then((data) => setData(data));
+    }, []);
+
+    return data
 }
