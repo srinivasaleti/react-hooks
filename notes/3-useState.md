@@ -1,9 +1,10 @@
 * Before hooks functional components are stateless components.
 * We can maintain state using `useState` React Hook
-* Syntax
-const [x, setX] = useState(defaultValueOfX)
 
-useState(defaultState) 
+# Syntax
+```
+const [x, setX] = useState(defaultValueOfX)
+```
     -> useState returns array
     [presetStateValue, functionToChangeTheStateValue]
 
