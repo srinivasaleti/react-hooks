@@ -1,13 +1,15 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { UserContext } from "./UserDashboard";
 
-export const EditUser = (props) => {
-    const user = props.user;
+export const EditUser = () => {
+    const userContext = useContext(UserContext);
+    const user = userContext.user;
 
     const [name, setName] = useState(user.name);
     const [age, setAge] = useState(user.age);
 
     const onSubmit = () => {
-        props.setUser({ name, age });
+        userContext.setUser({ name, age });
     }
 
     return (
